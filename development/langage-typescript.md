@@ -13,8 +13,32 @@
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté  ✔️
 
+addGrade: async (req: Request, res: Response) => {
+		const {
+			wilderId,
+			skillId,
+			grade,
+		}: {wilderId: string; skillId: string; grade: number} = req.body;
+
+		try {
+			const wilder = await wilders.findOneByOrFail({id: wilderId});
+
+			const skill = await skills.findOneByOrFail({id: skillId});
+
+			await grades.save({
+				grade: grade,
+				wilderId: wilder.id,
+				skillId: skill.id,
+			});
+			res.send(
+				` wilder ${wilder?.name} has been given grade ${grade} in ${skill?.name}`
+			);
+		} catch (err) {
+			console.log(err);
+		}
+	},
 ### Utilisation dans un projet  ✔️
 
 [lien github](...)
