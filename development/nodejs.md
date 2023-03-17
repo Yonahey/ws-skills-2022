@@ -46,7 +46,7 @@ Description :
 
 ## 🚧 Je franchis les obstacles
 
-### Point de blocage  ✔️
+### Point de blocage  ❌ / ✔️
 
 Description:
 
