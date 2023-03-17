@@ -15,7 +15,12 @@
 
 ### Un exemple personnel commenté  ✔️
 
-addGrade: async (req: Request, res: Response) => {
+/**
+	 * Ici Je type les arguments de ma fonction ainsi que les variables à l'intérieur,
+	 * cela permet a TS de m'avertir si j'utilise un type non approprié ou différent de celui attendu
+	 * **/
+
+	addGrade: async (req: Request, res: Response) => {
 		const {
 			wilderId,
 			skillId,
