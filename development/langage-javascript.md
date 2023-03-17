@@ -13,7 +13,7 @@
 
 ## 💻 Je code en Javascript
 
-### Un exemple de code commenté ❌ / ✔️
+### Un exemple de code commenté ✔️
 
 
 // La méthode .map nous permet de parcourir un tableau en l'itérant et en définissant une action à accomplir pour chaque index du tableau. Nous Obtenons un nouveau tableau en sortie. Ici on parcours un tableau Wilder et pour chaque elmèment de celui ci on retourne un composant react. 
